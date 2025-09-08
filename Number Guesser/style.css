@@ -1,52 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 body {
     min-height: 100vh;
     margin: 0;
-    background: radial-gradient(circle at 60% 40%, #7ec8e3 0%, #4f68aa 60%, #1f3f5e 100%);
+    background: linear-gradient(135deg, #ffe259 0%, #ffa751 100%);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Segoe UI', 'CustomFont', sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
-    color: #fafafa;
+    font-family: 'Fredoka One', 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
 }
 
+
+
+
 button {
-    border-radius: 30px;
-    background: linear-gradient(90deg, #7b5cff 0%, #4fc3f7 100%);
+    border-radius: 50px;
+    background: linear-gradient(90deg, #ff61a6 0%, #ffb347 100%);
     border: none;
-    padding: 1.2rem 3rem;
-    font-size: 2.2rem;
+    padding: 1.1rem 3rem;
+    font-size: 2rem;
     font-family: inherit;
     font-weight: bold;
-    margin: 2rem 0 1.5rem 0;
     color: #fff;
-    box-shadow: 0 8px 24px rgba(79, 104, 170, 0.2);
+    margin: 1.5rem 0 1.2rem 0;
+    box-shadow: 0 0 16px #ff61a6aa, 0 4px 16px #ffb34755;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    text-shadow: 1px 2px 8px #ffb34777;
+    letter-spacing: 1px;
 }
 button:hover {
-    background: linear-gradient(90deg, #4fc3f7 0%, #7b5cff 100%);
-    transform: translateY(-3px) scale(1.04);
+    background: linear-gradient(90deg, #ffb347 0%, #ff61a6 100%);
+    transform: scale(1.07) rotate(-2deg);
+    box-shadow: 0 0 32px #ff61a6cc, 0 8px 32px #ffb34799;
 }
 
 input[type="number"] {
     border-radius: 25px;
-    background: #2d3a5e;
-    border: none;
+    background: #fff7e6;
+    border: 2px solid #ffb347;
     padding: 0.8rem 1.5rem;
     font-family: inherit;
     font-size: 1.3rem;
-    color: #fffbe7;
+    color: #ff61a6;
     margin-bottom: 2rem;
     margin-top: 0.5rem;
-    box-shadow: 0 4px 16px rgba(70, 76, 156, 0.15);
+    box-shadow: 0 2px 8px #ffb34733;
     outline: none;
-    transition: box-shadow 0.2s;
+    transition: border 0.2s, box-shadow 0.2s;
+    text-align: center;
 }
 input[type="number"]:focus {
-    box-shadow: 0 0 0 3px #7b5cff55;
+    border: 2.5px solid #ff61a6;
+    box-shadow: 0 0 0 4px #ffb34744;
 }
 
 p {
@@ -55,32 +62,37 @@ p {
     border-radius: 18px;
     min-height: 2.5rem;
     font-size: 1.2rem;
-    background: rgba(255,255,255,0.07);
-    box-shadow: 0 2px 8px rgba(70, 76, 156, 0.08);
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0 2px 8px #ffb34722;
     display: inline-block;
+    text-align: center;
+    font-family: inherit;
 }
 
 #correct {
-    background: rgba(76, 175, 80, 0.18);
-    color: #baffc9;
+    background: linear-gradient(90deg, #b6ffb3 0%, #faffd1 100%);
+    color: #1fae4b;
     font-weight: bold;
+    border: 2px solid #1fae4b;
 }
 #wrong {
-    background: rgba(244, 67, 54, 0.18);
-    color: #ffbaba;
+    background: linear-gradient(90deg, #ffd6d6 0%, #fff6f6 100%);
+    color: #ff3b3b;
     font-weight: bold;
+    border: 2px solid #ff3b3b;
 }
 #overTen {
-    background: rgba(255, 193, 7, 0.18);
-    color: #ffe29a;
+    background: linear-gradient(90deg, #fff7b2 0%, #fffbe7 100%);
+    color: #ffb347;
     font-weight: bold;
+    border: 2px solid #ffb347;
 }
 
 img {
     border-radius: 25px;
-    border: solid 4px #7b5cff;
+    border: solid 4px #ff61a6;
     margin-top: 1.5rem;
-    box-shadow: 0 4px 24px rgba(79, 104, 170, 0.18);
+    box-shadow: 0 4px 24px #ffb34755;
     max-width: 320px;
     width: 90%;
     height: auto;
