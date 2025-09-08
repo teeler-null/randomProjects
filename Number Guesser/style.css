@@ -1,33 +1,90 @@
 body {
-    background: rgb(101, 98, 160);
-    background: radial-gradient(circle, rgb(83, 131, 175) 0%, rgb(79, 104, 170) 50%, rgb(31, 63, 94) 100%);
-    text-align: center;
-    font-family: 'CustomFont', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at 60% 40%, #7ec8e3 0%, #4f68aa 60%, #1f3f5e 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', 'CustomFont', sans-serif;
     font-weight: bold;
-    font-size: 30px;
-    color:rgb(250, 250, 250);
+    font-size: 2rem;
+    color: #fafafa;
 }
-button {border-radius: 25px;
-    background-color:rgb(64, 61, 92);
-    border: solid 4px rgb(70, 76, 156);
-    padding: 30px;
-    font-size: 50px;
-    font-family: 'CustomFont', sans-serif;
+
+button {
+    border-radius: 30px;
+    background: linear-gradient(90deg, #7b5cff 0%, #4fc3f7 100%);
+    border: none;
+    padding: 1.2rem 3rem;
+    font-size: 2.2rem;
+    font-family: inherit;
     font-weight: bold;
-    margin-bottom: 10%;
-    margin-top: 10%;
-    color: rgb(125, 31, 153);
-    color:rgb(255, 255, 255);
-    background: rgb(119, 141, 201);
+    margin: 2rem 0 1.5rem 0;
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(79, 104, 170, 0.2);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
 }
+button:hover {
+    background: linear-gradient(90deg, #4fc3f7 0%, #7b5cff 100%);
+    transform: translateY(-3px) scale(1.04);
+}
+
+input[type="number"] {
+    border-radius: 25px;
+    background: #2d3a5e;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-family: inherit;
+    font-size: 1.3rem;
+    color: #fffbe7;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 16px rgba(70, 76, 156, 0.15);
+    outline: none;
+    transition: box-shadow 0.2s;
+}
+input[type="number"]:focus {
+    box-shadow: 0 0 0 3px #7b5cff55;
+}
+
+p {
+    margin: 0.5rem 0;
+    padding: 0.7rem 1.2rem;
+    border-radius: 18px;
+    min-height: 2.5rem;
+    font-size: 1.2rem;
+    background: rgba(255,255,255,0.07);
+    box-shadow: 0 2px 8px rgba(70, 76, 156, 0.08);
+    display: inline-block;
+}
+
+#correct {
+    background: rgba(76, 175, 80, 0.18);
+    color: #baffc9;
+    font-weight: bold;
+}
+#wrong {
+    background: rgba(244, 67, 54, 0.18);
+    color: #ffbaba;
+    font-weight: bold;
+}
+#overTen {
+    background: rgba(255, 193, 7, 0.18);
+    color: #ffe29a;
+    font-weight: bold;
+}
+
 img {
     border-radius: 25px;
-    border: solid 4px rgb(70, 76, 156);
-    margin-top: 2%;
-}
-input {
-    border-radius: 25px;
-    background-color: rgb(70, 76, 156);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:antiquewhite;
+    border: solid 4px #7b5cff;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 24px rgba(79, 104, 170, 0.18);
+    max-width: 320px;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
