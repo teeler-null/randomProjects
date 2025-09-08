@@ -1,88 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 
 body {
     min-height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #ffe259 0%, #ffa751 100%);
-    font-family: 'Fredoka One', 'Comic Sans MS', cursive, sans-serif;
+    background: radial-gradient(ellipse at top left, #232526 0%, #0f2027 100%);
+    font-family: 'UnifrakturCook', 'Segoe UI', serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #e94560;
+    letter-spacing: 1px;
+}
+
+.game-container {
+    background: rgba(20, 20, 20, 0.97);
+    border-radius: 18px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 0 32px #000a, 0 2px 8px #e9456022;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+    max-width: 95vw;
+    border: 2px solid #e94560;
 }
 
 button {
-    border-radius: 30px;
-    background: #ff61a6;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #232526 0%, #e94560 100%);
     border: none;
-    padding: 1rem 2.5rem;
-    font-size: 1.5rem;
+    padding: 0.8rem 2.2rem;
+    font-size: 1.3rem;
     font-family: inherit;
     font-weight: bold;
     color: #fff;
-    margin: 1.2rem 0 1rem 0;
+    margin: 1rem 0 1rem 0;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 12px #e9456044;
+    text-shadow: 0 2px 8px #000a;
 }
 button:hover {
-    background: #ffb347;
-    color: #fff;
+    background: linear-gradient(90deg, #e94560 0%, #232526 100%);
+    box-shadow: 0 0 24px #e94560cc;
 }
 
 input[type="number"] {
-    border-radius: 18px;
-    background: #fff;
-    border: 2px solid #ffb347;
-    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    background: #18191a;
+    border: 2px solid #e94560;
+    padding: 0.5rem 1rem;
     font-family: inherit;
-    font-size: 1.1rem;
-    color: #ff61a6;
-    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    color: #e94560;
+    margin-bottom: 1rem;
     margin-top: 0.5rem;
     text-align: center;
     outline: none;
-    width: 180px;
+    width: 140px;
+    display: block;
+    box-shadow: 0 0 8px #e9456022;
 }
 input[type="number"]:focus {
-    border: 2px solid #ff61a6;
+    border: 2px solid #fff;
+    background: #232526;
+    color: #fff;
 }
 
 p {
-    margin: 0.4rem 0;
-    padding: 0.5rem 1rem;
-    border-radius: 12px;
-    min-height: 2rem;
-    font-size: 1rem;
-    background: #fff;
+    margin: 0.3rem 0;
+    padding: 0.4rem 0.5rem;
+    border-radius: 8px;
+    min-height: 1.5rem;
+    font-size: 1.1rem;
+    background: none;
     text-align: center;
     font-family: inherit;
     width: 100%;
+    color: #e94560;
+    font-weight: bold;
     box-sizing: border-box;
-}
-
-#correct {
-    background: #d4ffd4;
-    color: #1fae4b;
-    font-weight: bold;
-}
-#wrong {
-    background: #ffd6d6;
-    color: #ff3b3b;
-    font-weight: bold;
-}
-#overTen {
-    background: #fff7b2;
-    color: #ffb347;
-    font-weight: bold;
+    text-shadow: 0 2px 8px #000a;
 }
 
 img {
-    border-radius: 16px;
-    border: solid 3px #ff61a6;
+    border-radius: 10px;
+    border: solid 2px #e94560;
     margin-top: 1rem;
-    max-width: 220px;
+    max-width: 180px;
     width: 90%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 0 16px #e9456044;
 }
